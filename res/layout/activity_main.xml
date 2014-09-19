@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+            
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/loading"
+        android:clickable="true"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/layback"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/bh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bh"
+            android:layout_alignBottom="@+id/bh"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@+id/bh"
+            android:text="站点名称：" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@+id/bh"
+            android:text="可借车辆：" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_marginLeft="26dp"
+            android:text="可还车辆：" />
+
+        <TextView
+            android:id="@+id/mc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView3"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="44dp"
+            android:text="站点编号：" />
+
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/bh"
+            android:layout_below="@+id/bh"
+            android:layout_marginLeft="8dp" />
+
+        <WebView
+            android:id="@+id/webView2"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/webView1"
+            android:layout_alignBottom="@+id/webView1"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/textView4" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
